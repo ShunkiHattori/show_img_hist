@@ -1,4 +1,3 @@
-import func
 import datetime
 import jpholiday
 
