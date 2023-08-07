@@ -86,7 +86,7 @@ if sel == 1:
     print("")
     print("西暦を和暦に変換します")
     AD = int(input("西暦を入力してください(半角で1867以上2023以下の数字):"))
-    print(func.ADtrans(AD))
+    print(ADtrans(AD))
 
 if sel == 2:
     print("")
@@ -121,7 +121,7 @@ if sel == 2:
             else:
                 break
     try:
-        func.week(AD, month, day)
+        week(AD, month, day)
     except ValueError:
         print("その日付は存在しません")
 
@@ -146,4 +146,4 @@ if sel == 3:
                 print("1～12から選んでください")
             else:
                 break
-    func.holiday(AD, month)
+    holiday(AD, month)
